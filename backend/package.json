@@ -7,7 +7,10 @@
 		"watch": "esbuild --watch --bundle --minify --platform=browser --target=es2020 --outdir=build ./client/*.ts ./server/*.ts"
 	},
 	"compilerOptions": {
-		"types": ["@citizenfx/client", "@citizenfx/server"]
+		"types": [
+			"@citizenfx/client",
+			"@citizenfx/server"
+		]
 	},
 	"keywords": [],
 	"author": "@justcallme2k",
@@ -15,7 +18,11 @@
 		"@citizenfx/client": "^2.0.6947-1",
 		"@citizenfx/server": "^2.0.6947-1",
 		"@types/node": "^20.8.9",
+		"@types/react": "^18.2.67",
 		"esbuild": "^0.19.5",
 		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"react": "^18.2.0"
 	}
 }
