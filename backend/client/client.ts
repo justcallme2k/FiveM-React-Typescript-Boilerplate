@@ -1,8 +1,12 @@
-import { NUI } from "./modules/NUI"
+import { SendAppEvent } from "./modules/NUI"
 
 import "./modules/Callbacks"
 
 RegisterCommand("open", () => {
-	NUI.SendAppEvent("setVisible", true)
-	SetNuiFocus(true, true)
+	emitNet("App:server:prepare", global.source)
 }, false)
+
+onNet("App:client:prepare", () =>{
+	SendAppEvent("App:open", null)
+	SetNuiFocus(true, true)
+})

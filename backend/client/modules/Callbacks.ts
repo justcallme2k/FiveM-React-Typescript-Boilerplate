@@ -1,6 +1,6 @@
-import { NUI } from "./NUI"
+import { SendAppEvent } from "./NUI"
 
-RegisterNuiCallback("Close", function() {
-    NUI.SendAppEvent("setVisible", false)
+RegisterNuiCallback("App:close", () => {
+    SendAppEvent("App:close", null)
     SetNuiFocus(false, false)
 })
