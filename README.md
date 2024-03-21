@@ -1,5 +1,10 @@
 # FiveM Typescript React Boilerplate
 
+- Vite JS
+- React
+- Typescript
+- Tailwind CSS
+
 Install required npm packages
 ```
 npm i --force
