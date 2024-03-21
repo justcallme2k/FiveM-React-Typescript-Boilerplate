@@ -1,5 +1,7 @@
 # FiveM Typescript React Boilerplate
 
+This boilerplate utilizes
+
 - Vite JS
 - React
 - Typescript
