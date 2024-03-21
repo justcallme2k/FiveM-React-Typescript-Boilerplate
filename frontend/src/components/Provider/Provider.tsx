@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { App } from "../App/App"
-import { fetchNui, useNuiEvent } from "../../hooks"
+import { fetchNui, isEnvBrowser, useNuiEvent } from "../../hooks"
 
 export const Provider: React.FC = () => {
     const [visible, setVisible] = React.useState(false)
@@ -21,7 +21,7 @@ export const Provider: React.FC = () => {
 
     return (
         <React.Fragment>
-            {visible && (
+            {visible || isEnvBrowser && (
                 <App />
             )}
         </React.Fragment>
