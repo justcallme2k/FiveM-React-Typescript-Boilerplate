@@ -1,6 +1,9 @@
 # FiveM Typescript React Boilerplate
 
-This boilerplate utilizes
+## Warning
+This Boilerplate no longer receives updates.
+
+Utilizes
 
 - Vite JS
 - React
